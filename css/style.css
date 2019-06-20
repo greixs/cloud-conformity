@@ -39,24 +39,19 @@ html {
     url("../img/knowledge_base.jpg");
   width: 100%;
   position: relative;
-  float: left;
   min-height: 360px;
   padding-top: 140px;
   display: table;
 }
 
-#content-body {
-  width: 100%;
-  float: left;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
+/* #content-body {
+
+} */
 
 #footer-section {
   text-align: center;
+  width: 100%;
   margin: auto;
-  padding: 2rem 0;
 }
 
 #footer {
@@ -82,27 +77,14 @@ html {
 }
 
 #footer .card {
-  /* width: 18rem; */
   border: none;
   list-style: none;
 }
-
-/* .content-header-bg {
-  background-color: rgba(92, 1, 153, 0.5);
-  width: 100%;
-  position: relative;
-  float: left;
-  min-height: 360px;
-  padding-top: 140px;
-  display: table;
-} */
 
 .split {
   -webkit-columns: 2 auto;
   -moz-columns: 2 auto;
   columns: 2 200px;
-  /* -moz-column-fill: auto;
-  /* column-fill: auto; */
 }
 
 div {
