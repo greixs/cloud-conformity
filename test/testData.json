@@ -1,0 +1,89 @@
+{
+  "included": [
+    {
+      "type": "rules",
+      "id": "EC2-001",
+      "attributes": {
+        "name": "SecurityGroupPortRange",
+        "description": "Ensure no security group opens range of ports",
+        "title": "Security Group Port Range",
+        "categories": ["security"],
+        "compliances": ["AWAF", "PCI", "HIPAA", "APRA", "MAS", "NIST4"],
+        "risk-level": "MEDIUM",
+        "slug": "security-group-port-range",
+        "package": "security",
+        "rtm": false,
+        "level": "resource",
+        "release-date": "2017-01-01",
+        "update-date": "2017-01-01",
+        "provider": "aws"
+      }
+    },
+    {
+      "type": "rules",
+      "id": "EC2-002",
+      "attributes": {
+        "name": "SecurityGroupUnrestrictedPortAccess",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 to port 22",
+        "title": "Unrestricted SSH Access",
+        "categories": ["security"],
+        "compliances": ["AWAF", "CISAWSF", "PCI", "APRA", "MAS", "NIST4"],
+        "risk-level": "MEDIUM",
+        "slug": "unrestricted-ssh-access",
+        "settings": [
+          {
+            "type": "single-string-value",
+            "name": "access",
+            "label": "Access",
+            "readOnly": true,
+            "hidden": true,
+            "value": "SSH"
+          }
+        ],
+        "package": "auditing",
+        "rtm": false,
+        "level": "service",
+        "cis-section": "Networking",
+        "cis-number": "4.1",
+        "cis-expected-state": "Pass",
+        "cis-profile-applicability": "Level 1",
+        "release-date": "2017-01-01",
+        "update-date": "2018-11-19",
+        "provider": "aws"
+      }
+    },
+    {
+      "type": "rules",
+      "id": "EC2-003",
+      "attributes": {
+        "name": "SecurityGroupUnrestrictedPortAccess",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389",
+        "title": "Unrestricted RDP Access",
+        "categories": ["security"],
+        "compliances": ["AWAF", "CISAWSF", "PCI", "APRA", "MAS", "NIST4"],
+        "risk-level": "MEDIUM",
+        "slug": "unrestricted-rdp-access",
+        "settings": [
+          {
+            "type": "single-string-value",
+            "name": "access",
+            "label": "Access",
+            "readOnly": true,
+            "hidden": true,
+            "value": "RDP"
+          }
+        ],
+        "package": "auditing",
+        "rtm": false,
+        "level": "service",
+        "cis-section": "Networking",
+        "cis-number": "4.2",
+        "cis-expected-state": "Pass",
+        "cis-profile-applicability": "Level 1",
+        "release-date": "2017-01-01",
+        "update-date": "2018-11-19",
+        "provider": "aws"
+      }
+    }
+  ]
+}
