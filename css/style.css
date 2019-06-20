@@ -1,3 +1,29 @@
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+#content-body a {
+  color: #6a1b9a !important;
+}
+
 @media (min-width: 956px) {
   .horizontal-divider {
     width: 1px;
@@ -9,12 +35,68 @@
 }
 
 #content-header {
-  background-image: url("../img/knowledge_base.jpg");
+  background: linear-gradient(rgba(92, 1, 153, 0.5), rgba(92, 1, 153, 0.5)),
+    url("../img/knowledge_base.jpg");
+  width: 100%;
+  position: relative;
+  float: left;
+  min-height: 360px;
+  padding-top: 140px;
+  display: table;
 }
 
-.content-header-bg {
-  background-color: rgba(0, 0, 0, 0.5);
+#content-body {
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
+
+#footer-section {
+  text-align: center;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+#footer {
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+#footer a {
+  color: grey;
+}
+
+#footer .nav-link {
+  padding-left: 0;
+}
+
+#footer img {
+  max-width: 400px;
+}
+
+#footer .card {
+  /* width: 18rem; */
+  border: none;
+  list-style: none;
+}
+
+/* .content-header-bg {
+  background-color: rgba(92, 1, 153, 0.5);
+  width: 100%;
+  position: relative;
+  float: left;
+  min-height: 360px;
+  padding-top: 140px;
+  display: table;
+} */
+
 .split {
   -webkit-columns: 2 auto;
   -moz-columns: 2 auto;

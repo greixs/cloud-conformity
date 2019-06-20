@@ -1,18 +1,11 @@
 const baseUrl = "https://www.cloudconformity.com/conformity-rules";
 
-document.addEventListener("DOMContentLoaded", function (event) {
-    // Your code to run since DOM is loaded and ready
-    const jsonData = fetchData(
-        "https://us-west-2.cloudconformity.com/v1/services"
-    );
-});
-
 function fetchData(url) {
     fetch(url)
         .then(function (response) {
             return response.json();
         })
-        .then(function (jsonData) {
+        .then(jsonData => {
             // console.log(JSON.stringify(jsonData));
             createLists(jsonData);
         })

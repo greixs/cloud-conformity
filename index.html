@@ -26,7 +26,11 @@
     <script src="./js/main.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-light navbar-expand-lg bg-white sticky-top p-3">
+    <!-- top nav menu bar -->
+    <nav
+      class="navbar shadow navbar-light 
+             navbar-expand-lg bg-white sticky-top p-3"
+    >
       <a href="https://www.cloudconformity.com/" class="navbar-brand">
         <img src="./img/logo.png" alt="Cloud Conformity" />
       </a>
@@ -103,7 +107,8 @@
       </div>
     </nav>
 
-    <div id="content-header" class="p-3">
+    <!-- contents -->
+    <div id="content-header">
       <div class="content-header-bg">
         <div class="container text-white">
           <section class="align-middle my-5">
@@ -124,9 +129,9 @@
         </div>
       </div>
     </div>
-    <section id="content-body">
+    <section id="content-body" class="pt-5">
       <div class="container">
-        <div class="section my-5">
+        <div class="section">
           <h2>Conformity Rules</h2>
           <p>
             Along with continuous assurance of your infrastructure, Cloud
@@ -150,5 +155,128 @@
       <!-- Js script will fetch json data and populate div below -->
       <div id="links" class="split container my-5"></div>
     </section>
+
+    <!-- Footer section-->
+    <section id="footer-section" class="container">
+      <div class="card border-0 text-white bg-primary">
+        <div class="card-body">
+          <p class="text-justify">
+            Whether you are still exploring the benefits of Amazon Web Services,
+            or are running complex critical workloads,
+            <span class="font-weight-bold"
+              >Cloud Conformity simplifies the challenging task of maintaining
+              visibility of your infrastructure</span
+            >
+            and ensuring compliance against best practices, along with identifying
+            potential threats in real-time.
+          </p>
+          <button class="btn btn-primary">
+            <a
+              class="text-white"
+              href="https://www.cloudconformity.com/sign-up.html"
+              >Start a Free Trial</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer" class="border-top">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="card p-3">
+            <img src="./img/AWS.png" alt="" class="card-img" />
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h7 class="card-title">PRODUCT</h4>
+              <ul class="nav flex-column" aria-orientation="vertical">
+                <li class="nav-item">
+                  <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Auto-Recomendation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">API Documentation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Help</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+              <div class="card">
+                <div class="card-body">
+                  <h7 class="card-title">Company</h4>
+                  <ul class="nav flex-column" aria-orientation="vertical">
+                    <li class="nav-item">
+                      <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Knowledge Base</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Customers</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card text-right">
+            <div class="card-body">
+              <div class="copyright">
+                <span>© 2016 - 2019 Cloud Conformity Pty. Ltd.</span>
+                <br>
+                <span>Website version: v1.3.73</span>
+                <br>
+                <span>Last update: 02 June 2019</span>
+              </div>
+              <div class="legalLink text-dark">
+                <a href="">Terms and Conditions</a>
+                <span>—</span>
+                <a href="">Privacy Policy</a>
+              </div>
+              <div class="legalLink">
+                <a href="">Saas Agreement</a>
+                <span>—</span>
+                <a href="">Commitment to GDPR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        // Your code to run since DOM is loaded and ready
+        fetchData("https://us-west-2.cloudconformity.com/v1/services");
+      });
+    </script>
   </body>
 </html>
