@@ -63,15 +63,6 @@ function createLists(arrayDict) {
         h3.appendChild(a);
 
         //create a list of sublinks from each item
-        //   let ul = document.createElement("ul");
-        //   ul.className = "list-group";
-        //   element.relationships.rules.data.forEach(data => {
-        //     const id = data.id;
-        //     // const item = arrayDict.included.find(item => item.id == id);
-        //     const item = _.find(arrayDict.included, { id: id });
-        //     console.log(item);
-        //     ul.appendChild(createSubLists(item, a.href));
-        //   });
         let elementAbreviaton = element.relationships
             .rules.data[0].id.split("-")[0];
         let ul = createSubLists(
@@ -87,18 +78,6 @@ function createLists(arrayDict) {
 }
 
 function createSubLists(items, headerUrl) {
-    // let li = document.createElement("li");
-    // li.className = "list-group-item";
-    // let a = document.createElement("a");
-    // a.href = new URL(item.attributes.slug, headerUrl);
-    // a.innerHTML = item.attributes.title;
-
-    // li.appendChild(a);
-    // return li;
-
-    // console.log(items, headerUrl);
-
-
     let ul = document.createElement("ul");
     ul.className = "list-group-flush";
     items.forEach(item => {

@@ -1,0 +1,24 @@
+{
+  "name": "cloud-comformity",
+  "version": "1.0.0",
+  "description": "TODO List:\r ```\r - Unit Testing\r - index.html footer\r ```",
+  "main": "./js/mainNode.js",
+  "scripts": {
+    "test": "mocha || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greixs/cloud-conformity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greixs/cloud-conformity/issues"
+  },
+  "homepage": "https://github.com/greixs/cloud-conformity#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-json": "^1.0.0",
+    "mocha": "^6.1.4"
+  }
+}
