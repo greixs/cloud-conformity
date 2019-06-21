@@ -95,3 +95,5 @@ function createSubLists(items, headerUrl) {
 
     return ul;
 }
+
+module.exports = { compare, createSortedIncludedData, createLists, createSubLists };

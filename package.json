@@ -2,7 +2,7 @@
   "name": "cloud-comformity",
   "version": "1.0.0",
   "description": "TODO List:\r ```\r - Unit Testing\r - index.html footer\r ```",
-  "main": "./js/mainNode.js",
+  "main": "./test/UnitTest.js",
   "scripts": {
     "test": "mocha || exit 0"
   },
@@ -19,6 +19,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-json": "^1.0.0",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "mocha-jsdom": "^2.0.0"
   }
 }
